@@ -96,6 +96,10 @@
 
 .email-form__icon {
   position: absolute;
+  top: 55px;
+  right: 28px;
+  transform: translateY(50%);
+
   @media screen and (min-width: 480px) {
     top: 55px;
     right: 28px;

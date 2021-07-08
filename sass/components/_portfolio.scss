@@ -95,6 +95,7 @@
 }
 
 .products__item {
+  width: 100%;
   @extend %transform;
 
   &:hover,
