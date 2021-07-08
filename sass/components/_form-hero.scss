@@ -14,9 +14,9 @@
 
 .form__label-name {
   position: absolute;
-
   top: 0;
-  left: 0;
+  left: -15px;
+
   transform: translateY(-15px);
 
   font-size: 12px;
@@ -27,15 +27,24 @@
   letter-spacing: 0.01em;
 
   color: $description-color;
+
+  @media screen and (min-width: 480px) {
+    top: 0;
+    left: 0;
+  }
 }
 
 .form__icons {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(50%, 60%);
-
   @extend %transition;
+  transform: translate(50%, 60%);
+  top: 0;
+  left: -20px;
+
+  @media screen and (min-width: 480px) {
+    top: 0;
+    left: 0;
+  }
 }
 
 .form__tittle--bold {
