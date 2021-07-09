@@ -502,16 +502,18 @@ body {
   fill: #2196f3;
 }
 
-.navigation__menu-button .button_close {
-  display: none;
-}
-
 .navigation__menu-button.is-open .button-menu {
   display: none;
 }
 
 .navigation__menu-button.is-open .button_close {
   display: block;
+}
+
+.mobile-button__closed {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .site-link {
@@ -641,8 +643,8 @@ body {
 
 .hero {
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero-mobile.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   height: 400px;
   background-size: cover;
@@ -651,34 +653,34 @@ body {
   margin-right: auto;
   text-align: center;
   padding: 118px 0px;
-  max-width: 1600px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(/images/hero-mobile-x2.jpg);
+    background-image: to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/hero-mobile-x2.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
   .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-tablet.jpg);
     max-width: 480px;
     height: 400px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero-mobile.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mobile.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-width: 480px) and (min-resolution: 2dppx) and (min-width: 480px) {
   .hero {
-    background-image: to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(/images/hero-mobile-x2.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-x2.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero-tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
     max-width: 768px;
     height: 400px;
   }
@@ -686,15 +688,15 @@ body {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero-tablet-x2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tablet-x2.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-x2.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero-desk.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-desk.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desk.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk.jpg);
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
@@ -703,8 +705,8 @@ body {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero-desk-x2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-desk-x2.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desk-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-x2.jpg);
   }
 }
 
@@ -771,14 +773,12 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     max-width: 450px;
-    max-height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    max-height: 581px;
   }
 }
 
@@ -1441,14 +1441,15 @@ body {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .logo-footer {
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: start;
   }
 }
 
@@ -1473,6 +1474,12 @@ body {
 @media screen and (min-width: 768px) {
   .address-social {
     margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-social {
+    text-align: start;
   }
 }
 
@@ -1681,7 +1688,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1691,6 +1697,19 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product-type {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-type {
+    margin-bottom: 50px;
   }
 }
 
@@ -1824,7 +1843,7 @@ body {
 
 .moble-menu {
   position: absolute;
-  top: 60px;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -1846,6 +1865,9 @@ body {
           flex-direction: column;
   padding: 20px 40px;
   z-index: 999;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
@@ -1863,10 +1885,6 @@ body {
 .moble-menu.is-open {
   -webkit-transform: translateY(-160%);
           transform: translateY(-160%);
-}
-
-.mobile-menu__list {
-  margin-bottom: 200px;
 }
 
 .mobile-menu__item {

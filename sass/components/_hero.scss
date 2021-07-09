@@ -5,7 +5,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/hero-mobile.jpg);
+    url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   height: 400px;
   background-size: cover;
@@ -14,33 +14,35 @@
   margin-right: auto;
   text-align: center;
   padding: 118px 0px;
-  max-width: 1600px;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient
-        and(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/hero-mobile-x2.jpg);
+    background-image: linear-gradient and
+        (to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-mobile-x2.jpg);
   }
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
-    height: 400px;
-
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero-mobile.jpg);
+      url(../images/mobile-tablet.jpg);
+
+    max-width: 480px;
+    height: 400px;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) and (min-width: 480px) {
-      background-image: linear-gradient
-          and(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/hero-mobile-x2.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-mobile-x2.jpg);
     }
   }
 
@@ -50,7 +52,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero-tablet.jpg);
+      url(../images/hero-tablet.jpg);
 
     max-width: 768px;
     height: 400px;
@@ -63,7 +65,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/hero-tablet-x2.jpg);
+        url(../images/hero-tablet-x2.jpg);
     }
   }
 
@@ -73,7 +75,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero-desk.jpg);
+      url(../images/hero-desk.jpg);
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
@@ -86,7 +88,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/hero-desk-x2.jpg);
+        url(../images/hero-desk-x2.jpg);
     }
   }
 }

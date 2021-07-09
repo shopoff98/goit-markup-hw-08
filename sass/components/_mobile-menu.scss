@@ -1,6 +1,6 @@
 .moble-menu {
   position: absolute;
-  top: 60px;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -13,6 +13,9 @@
   flex-direction: column;
   padding: 20px 40px;
   z-index: 999;
+
+  justify-content: space-between;
+
   @media screen and (min-width: 480px) {
     padding: 48px 40px;
   }
@@ -24,9 +27,6 @@
 
 .moble-menu.is-open {
   transform: translateY(-160%);
-}
-.mobile-menu__list {
-  margin-bottom: 200px;
 }
 
 .mobile-menu__item {
