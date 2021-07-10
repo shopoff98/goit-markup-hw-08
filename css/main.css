@@ -1378,7 +1378,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1770,6 +1775,12 @@ body {
     -ms-grid-columns: (3fr)[3];
         grid-template-columns: repeat(3, 3fr);
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

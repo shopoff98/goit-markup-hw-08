@@ -80,6 +80,12 @@
   }
 }
 
+.products__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
 .products__title {
   font-weight: 700;
   font-size: 18px;
